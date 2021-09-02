@@ -7,22 +7,28 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    <main id="app">
-        <h1>{{title}}</h1>
-        <form @submit.prevent="addTodo">
-            <label for="newTodo">New Todo</label>
-            <input v-model="newTodo" type="type" name="newTodo" id="newTodo">
-            <button type="submit" name="button">Add</button>
-        </form>
-        <ul>
-            <li v-for="todo in todos">
-                <input type="checkbox" checked="todo.done">
-                <span>{{todo.title}}</span>
-            </li>
-        </ul>
+<body class="bg-black">
+    <main id="app" >
+        <div class="bg-white main">
+            <h1>{{title}}</h1>
+            <div class="center">
+                <form @submit.prevent="addTodo">
+                    <div class="subtitle"><label for="newTodo">Add Task</label></div>
+                    <input v-model="newTodo" class="input" type="type" name="newTodo" id="newTodo">
+                    <button type="submit" name="button">+</button>
+                </form>
+            </div>
+            <ul>
+                <li v-for="todo in todos">
+                    <input type="checkbox" v-model="todo.done">
+                    <span :class="{ done: todo.done }">{{todo.title}}</span>
+                    <button @click="removeTodo(todo)" type="button" name="remove">Remove</button>
+                </li>
+            </ul>
+            <div class="float-right"><button @click="allDone" type="button" name="button">Mark All Complete</button></div>
+        </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="app.js" charset="utf-8"></script>
 </body>
 </html>

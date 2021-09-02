@@ -22,11 +22,80 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 1rem;
     font-family: var(--ff-accent);
     font-weight: 700;
     text-align: center;
 }
 
+ul {
+    list-style: none;
+}
+
+button {
+    margin: 0;
+    padding: 0.4rem;
+    border: 1px solid var(--clr-dark-grey);
+    background-color: var(--clr-dark-grey);
+    color: white;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  button:hover {
+    background-color: var(--clr-snuff) ;
+    border: 1px solid var(--clr-snuff);
+  }
+
 .center {
+    margin: auto;
+    padding: 1rem;
     text-align: center;
 }
+
+.float-right {
+    padding: 2rem;
+    float: right;
+}
+
+.subtitle {
+    padding: 1rem;
+}
+
+.main {
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.input {
+    margin: 1.2rem;
+    padding: 0.2rem;
+    border: 1px solid var(--clr-dark-grey);
+    transition: 0.5s;
+    outline: none;
+    font-family: 'Source Sans Pro', 'Veranda', sans-serif;
+    font-size: 16px;
+  }
+  
+.input:focus {
+    border: 1px solid var(--clr-snuff) ;
+}
+
+.input {
+  box-sizing: border-box;
+  margin: 0;
+}
+
