@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --clr-dark-grey: #303030;
+    --clr-rose-bud: #f7b2a6;
+    --clr-manhattan: #f4c1a6;
+    --clr-opal: #aac3c4;
+    --clr-snuff: #e1d1e6;
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-accent: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    font-family: var(--ff-primary);
+    color: var(--clr-dark-grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-accent);
+    font-weight: 700;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
