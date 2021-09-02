@@ -12,7 +12,7 @@
         <h1>{{title}}</h1>
         <form @submit.prevent="addTodo">
             <label for="newTodo">New Todo</label>
-            <input type="type" name="newTodo" id="newTodo">
+            <input v-model="newTodo" type="type" name="newTodo" id="newTodo">
             <button type="submit" name="button">Add</button>
         </form>
     </main>
