@@ -100,9 +100,14 @@ button {
 }
 
 .checkbox {
-    position: absolute;
     opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+    width: 1em;
+    height: 1em;
+}
+
+.checkbox-style {
+    display: inline-grid;
+    width: 1rem;
+    height: 1rem;
+    border: 0.1em solid var(--clr-dark-grey);
   }

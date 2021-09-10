@@ -21,6 +21,7 @@
             <ul>
                 <li v-for="todo in todos">
                     <input class="checkbox" type="checkbox" v-model="todo.done">
+                    <span class="checkbox-style"></span>
                     <span :class="{ done: todo.done }">{{todo.title}}</span>
                     <button @click="removeTodo(todo)" type="button" name="remove">Remove</button>
                 </li>
